@@ -1,5 +1,7 @@
 package intro.to.design.patterns.using.javalang.iterator;
 
+import java.util.ArrayList;
+
 public class IteratorMain {
     public static void main(String[] args) {
         BookShelf bookShelf = new BookShelf(4);
@@ -15,7 +17,7 @@ public class IteratorMain {
         }
         System.out.println();
 
-        Book[] books = bookShelf.getBooks();
+        ArrayList<Book> books = bookShelf.getBooks();
         for (Book book : books) {
             System.out.println(book.getName());
         }

@@ -1,24 +1,24 @@
 package intro.to.design.patterns.using.javalang.iterator;
 
+import java.util.ArrayList;
+
 public class BookShelf implements Iterable<Book> {
-    private Book[] books;
-    private int last = 0;
+    private ArrayList<Book> books;
 
     public BookShelf(int maxSize) {
-        this.books = new Book[maxSize];
+        this.books = new ArrayList<>(maxSize);
     }
 
     public Book getBookAt(int index) {
-        return books[index];
+        return books.get(index);
     }
 
     public void appendBook(Book book) {
-        this.books[last] = book;
-        last++;
+        this.books.add(book);
     }
 
     public int getLength() {
-        return last;
+        return books.size();
     }
 
     @Override
@@ -26,7 +26,7 @@ public class BookShelf implements Iterable<Book> {
         return new BookShelfIterator(this);
     }
 
-    public Book[] getBooks() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 }
