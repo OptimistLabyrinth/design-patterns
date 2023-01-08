@@ -1,6 +1,6 @@
-package intro.to.design.patterns.using.javalang.adapter.delegation;
+package intro.to.design.patterns.using.javalang.adapter.banner.delegation;
 
-import intro.to.design.patterns.using.javalang.adapter.Banner;
+import intro.to.design.patterns.using.javalang.adapter.banner.Banner;
 
 public class PrintDelegationBannerDelegation extends PrintDelegation {
     private final Banner banner;

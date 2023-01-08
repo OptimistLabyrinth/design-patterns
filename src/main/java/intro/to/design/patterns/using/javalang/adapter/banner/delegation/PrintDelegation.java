@@ -1,4 +1,4 @@
-package intro.to.design.patterns.using.javalang.adapter.delegation;
+package intro.to.design.patterns.using.javalang.adapter.banner.delegation;
 
 public abstract class PrintDelegation {
     public abstract void printWeak();

@@ -1,4 +1,4 @@
-package intro.to.design.patterns.using.javalang.adapter;
+package intro.to.design.patterns.using.javalang.adapter.banner;
 
 public class Banner {
     private final String string;

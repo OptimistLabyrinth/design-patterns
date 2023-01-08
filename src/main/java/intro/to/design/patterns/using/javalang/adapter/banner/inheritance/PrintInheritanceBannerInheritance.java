@@ -1,6 +1,6 @@
-package intro.to.design.patterns.using.javalang.adapter.inheritance;
+package intro.to.design.patterns.using.javalang.adapter.banner.inheritance;
 
-import intro.to.design.patterns.using.javalang.adapter.Banner;
+import intro.to.design.patterns.using.javalang.adapter.banner.Banner;
 
 public class PrintInheritanceBannerInheritance extends Banner implements PrintInheritance {
     public PrintInheritanceBannerInheritance(String string) {
