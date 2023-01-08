@@ -1,8 +1,8 @@
 package intro.to.design.patterns.using.javalang.templatemethod;
 
 public class StringDisplay extends AbstractDisplay {
-    private String string;
-    private int width;
+    private final String string;
+    private final int width;
 
     public StringDisplay(String string) {
         this.string = string;

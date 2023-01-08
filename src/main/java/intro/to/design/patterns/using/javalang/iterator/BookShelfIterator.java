@@ -3,7 +3,7 @@ package intro.to.design.patterns.using.javalang.iterator;
 import java.util.NoSuchElementException;
 
 public class BookShelfIterator implements Iterator<Book> {
-    private BookShelf bookShelf;
+    private final BookShelf bookShelf;
     private int index;
 
     public BookShelfIterator(BookShelf bookShelf) {

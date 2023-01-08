@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FileProperties implements FileIO {
-    private static final String splitDelimiter = ": ";
+    private static final String SPLIT_DELIMITER = ": ";
     private final Map<String, String> properties;
 
     public FileProperties() {
@@ -31,7 +31,7 @@ public class FileProperties implements FileIO {
             properties.clear();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] tokens = line.split(splitDelimiter, 2);
+                String[] tokens = line.split(SPLIT_DELIMITER, 2);
                 if (tokens.length < 2) {
                     continue;
                 }
@@ -59,7 +59,7 @@ public class FileProperties implements FileIO {
                     String.format("# %s\n",
                             localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd (EEE), HH:mm:ss"))));
             for (Map.Entry<String, String> entry : properties.entrySet()) {
-                String line = entry.getKey() + splitDelimiter + entry.getValue() + '\n';
+                String line = entry.getKey() + SPLIT_DELIMITER + entry.getValue() + '\n';
                 bufferedWriter.write(line);
             }
         }
