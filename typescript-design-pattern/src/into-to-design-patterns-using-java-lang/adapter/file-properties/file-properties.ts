@@ -1,7 +1,8 @@
 import fs from 'fs/promises'
 import path from 'path'
 import os from 'os'
-import DayjsAdapter from '../../../utils/dayjs-adapter'
+import { DateTime } from '../../../utils/date-time'
+import DayjsDateTime from '../../../utils/date-time/dayjs-date-time'
 import { FileIO } from './file-io'
 
 export default class FileProperties implements FileIO {
@@ -40,8 +41,8 @@ export default class FileProperties implements FileIO {
   async writeToFile(fileName: string) {
     const pathToFile = this.absoluteFileName(fileName)
     let fileContent = '# written by FileProperties\n'
-    const dayjs = new DayjsAdapter()
-    fileContent = fileContent + `# ${dayjs.getTodayString()}\n`
+    const dateTime: DateTime = new DayjsDateTime()
+    fileContent = fileContent + `# ${dateTime.getTodayString()}\n`
     for (const [ key, value ] of this.properties) {
       fileContent = fileContent + `${key}: ${value}\n`
     }

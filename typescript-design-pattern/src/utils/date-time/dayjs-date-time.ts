@@ -1,6 +1,7 @@
 import dayjs from 'dayjs'
+import { DateTime } from '.'
 
-export default class DayjsAdapter {
+export default class DayjsDateTime implements DateTime {
   private dayOfWeekAsString(dayOfWeek: number): string {
     let result = 'sunday'
     switch (dayOfWeek) {
