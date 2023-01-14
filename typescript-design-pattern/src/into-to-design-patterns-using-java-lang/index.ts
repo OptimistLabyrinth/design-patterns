@@ -2,6 +2,7 @@ import Input from '../utils/stdin-stdout/input'
 import Output from '../utils/stdin-stdout/output'
 import adapterBannerMain from './adapter/banner/adapter-banner-main'
 import adapterFileProperties from './adapter/file-properties/adapter-file-properties'
+import factoryMethodMain from './factory-method/factory-method-main'
 import internalIteratorMain from './internal-iterator/internal-iterator-main'
 import iteratorMain from './iterator/iterator-main'
 import templateMethodMain from './template-method/template-method-main'
@@ -13,6 +14,7 @@ const main = async () => {
   3. Adapter Print Banner
   4. Adapter File Properties
   5. Template Method
+  6. Factory Method
 => `)
   const answerLower = answer.trim().toLocaleLowerCase()
   switch (answerLower) {
@@ -50,6 +52,13 @@ const main = async () => {
     case 'template method 5':
     case 'pattern 5':
       templateMethodMain()
+      break
+
+    case '6':
+    case 'factory method':
+    case 'factory method 6':
+    case 'pattern 6':
+      factoryMethodMain()
       break
 
     default:

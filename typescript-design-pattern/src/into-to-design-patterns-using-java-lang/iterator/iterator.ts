@@ -1,4 +1,4 @@
 export interface Iterator<E> {
-  hasNext: () => boolean
-  next: () => E
+  hasNext(): boolean
+  next(): E
 }
