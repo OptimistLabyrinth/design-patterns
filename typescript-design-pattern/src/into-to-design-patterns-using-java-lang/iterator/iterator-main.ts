@@ -1,4 +1,4 @@
-import Output from '../../stdin-stdout/output'
+import Output from '../../utils/stdin-stdout/output'
 import Book from './book'
 import BookShelf from './book-shelf'
 import { Iterator } from './iterator'
@@ -13,15 +13,15 @@ const iteratorMain = () => {
   const it: Iterator<Book> = bookShelf.iterator()
   while (it.hasNext()) {
     const book: Book = it.next()
-    Output.print(book.name)
+    Output.logString(book.name)
   }
-  Output.print()
+  Output.logString()
 
   const books: Book[] = bookShelf.books
   for (const book of books) {
-    Output.print(book.name)
+    Output.logString(book.name)
   }
-  Output.print()
+  Output.logString()
 }
 
 export default iteratorMain

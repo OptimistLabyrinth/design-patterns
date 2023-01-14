@@ -15,7 +15,9 @@
     "lint:fix": "eslint --fix .",
     "clean": "rm -rf dist/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.1",

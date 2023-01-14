@@ -1,5 +1,4 @@
 import * as readline from 'readline'
-import process from 'process'
 
 export default class Input {
   private static readonly rl: readline.Interface = readline.createInterface({

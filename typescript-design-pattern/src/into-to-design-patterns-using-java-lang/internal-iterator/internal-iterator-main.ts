@@ -1,4 +1,4 @@
-import Output from '../../stdin-stdout/output'
+import Output from '../../utils/stdin-stdout/output'
 import Book from './book'
 import BookShelf from './book-shelf'
 
@@ -13,9 +13,9 @@ const internalIteratorMain = () => {
   // ! iterator not properly working
   // ! iterator not properly working
   for (const book of bookShelf) {
-    Output.print(book.name)
+    Output.logString(book.name)
   }
-  Output.print()
+  Output.logString()
   // ! iterator not properly working
   // ! iterator not properly working
   // ! iterator not properly working
@@ -24,15 +24,15 @@ const internalIteratorMain = () => {
   let result = iterator.next()
   let book = result.value
   do {
-    Output.print(book.name)
+    Output.logString(book.name)
     result = iterator.next()
     book = result.value
     if (result.done) {
-      Output.print(`haha ${book.name}`)
+      Output.logString(`haha ${book.name}`)
       break
     }
   } while (!result.done)
-  Output.print()
+  Output.logString()
 }
 
 export default internalIteratorMain

@@ -1,5 +1,5 @@
 import introToDesignPatternsUsingJavaLang from './into-to-design-patterns-using-java-lang'
-import Input from './stdin-stdout/input'
+import Input from './utils/stdin-stdout/input'
 
 const main = async () => {
   introToDesignPatternsUsingJavaLang.main()
