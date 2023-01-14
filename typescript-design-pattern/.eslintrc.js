@@ -1,5 +1,6 @@
 const OFF = 'off'
 const WARN = 'warn'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ERROR = 'error'
 const defaultLevelLayoutFormatting = WARN
 
