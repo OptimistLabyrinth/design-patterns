@@ -1,4 +1,4 @@
-import Output from '../../utils/stdin-stdout/output'
+import Output from '../../../utils/stdin-stdout/output'
 import Book from './book'
 import BookShelf from './book-shelf'
 

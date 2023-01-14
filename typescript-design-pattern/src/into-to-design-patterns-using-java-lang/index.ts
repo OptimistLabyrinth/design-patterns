@@ -3,7 +3,7 @@ import Output from '../utils/stdin-stdout/output'
 import adapterBannerMain from './adapter/banner/adapter-banner-main'
 import adapterFileProperties from './adapter/file-properties/adapter-file-properties'
 import factoryMethodMain from './factory-method/factory-method-main'
-import internalIteratorMain from './internal-iterator/internal-iterator-main'
+import internalIteratorMain from './iterator/internal-iterator/internal-iterator-main'
 import iteratorMain from './iterator/iterator-main'
 import templateMethodMain from './template-method/template-method-main'
 
