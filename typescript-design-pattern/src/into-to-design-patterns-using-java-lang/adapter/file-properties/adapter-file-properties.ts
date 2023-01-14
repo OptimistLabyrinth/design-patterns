@@ -18,7 +18,7 @@ const getFileProperties = async () => {
   const width = f.getValue('width')
   const height = f.getValue('height')
   const depth = f.getValue('depth')
-  Output.dirObject({ width, height, depth })
+  Output.dir({ width, height, depth })
 }
 
 const adapterFileProperties = async () => {

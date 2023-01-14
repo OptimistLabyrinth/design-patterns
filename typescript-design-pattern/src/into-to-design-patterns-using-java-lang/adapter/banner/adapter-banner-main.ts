@@ -6,7 +6,7 @@ const adapterBannerMain = () => {
   const print: Print = new PrintBanner('adapter design pattern')
   print.printWeak()
   print.printStrong()
-  Output.logString()
+  Output.log()
 }
 
 export default adapterBannerMain

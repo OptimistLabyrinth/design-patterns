@@ -13,9 +13,9 @@ const internalIteratorMain = () => {
   // ! iterator not properly working
   // ! iterator not properly working
   for (const book of bookShelf) {
-    Output.logString(book.name)
+    Output.log(book.name)
   }
-  Output.logString()
+  Output.log()
   // ! iterator not properly working
   // ! iterator not properly working
   // ! iterator not properly working
@@ -24,15 +24,15 @@ const internalIteratorMain = () => {
   let result = iterator.next()
   let book = result.value
   do {
-    Output.logString(book.name)
+    Output.log(book.name)
     result = iterator.next()
     book = result.value
     if (result.done) {
-      Output.logString(`haha ${book.name}`)
+      Output.log(`haha ${book.name}`)
       break
     }
   } while (!result.done)
-  Output.logString()
+  Output.log()
 }
 
 export default internalIteratorMain

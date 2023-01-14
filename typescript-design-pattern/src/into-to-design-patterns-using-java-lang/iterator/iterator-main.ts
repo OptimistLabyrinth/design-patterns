@@ -13,15 +13,15 @@ const iteratorMain = () => {
   const it: Iterator<Book> = bookShelf.iterator()
   while (it.hasNext()) {
     const book: Book = it.next()
-    Output.logString(book.name)
+    Output.log(book.name)
   }
-  Output.logString()
+  Output.log()
 
   const books: Book[] = bookShelf.books
   for (const book of books) {
-    Output.logString(book.name)
+    Output.log(book.name)
   }
-  Output.logString()
+  Output.log()
 }
 
 export default iteratorMain

@@ -1,17 +1,13 @@
 export default class Output {
-  static logString(message?: string) {
-    if (message) {
-      console.log(message)
+  static log(value?: unknown) {
+    if (value) {
+      console.log(value)
       return
     }
     console.log('')
   }
 
-  static logObject(object: object) {
-    console.log(object)
-  }
-
-  static dirObject(object: object) {
+  static dir(object: object) {
     console.dir(object)
   }
 }

@@ -8,11 +8,11 @@ export default class Banner {
   }
 
   showWithParen() {
-    Output.logString(`( ${this._message} )`)
+    Output.log(`( ${this._message} )`)
   }
 
   showWithAstr() {
-    Output.logString(`* ${this._message} *`)
+    Output.log(`* ${this._message} *`)
   }
 
   get message() {
