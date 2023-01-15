@@ -1,0 +1,19 @@
+# VSCode IDE
+.vscode/
+main.dSYM/
+build/
+
+# CMake related
+CMakeFiles/
+Testing/
+
+cmake_install.cmake
+CMakeCache.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+DartConfiguration.tcl
+Makefile
+
+lib/
+bin/
