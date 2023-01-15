@@ -3,7 +3,7 @@
 main.dSYM/
 build/
 
-# CMake related
+# CMake related files and directories created by mistake
 CMakeFiles/
 Testing/
 
@@ -15,5 +15,5 @@ CTestTestfile.cmake
 DartConfiguration.tcl
 Makefile
 
-lib/
-bin/
+# CMake build directory
+output/
