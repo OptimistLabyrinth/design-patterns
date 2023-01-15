@@ -20,7 +20,7 @@ public:
     const int getLength();
     const std::shared_ptr<std::vector<Book>> &getBooks();
 
-    std::shared_ptr<BookShelfIterator> iterator();
+    std::unique_ptr<BookShelfIterator> iterator();
 
 private:
     std::shared_ptr<std::vector<Book>> books;

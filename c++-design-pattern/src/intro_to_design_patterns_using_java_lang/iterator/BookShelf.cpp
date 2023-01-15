@@ -38,7 +38,7 @@ const std::shared_ptr<std::vector<Book>> &BookShelf::getBooks()
     return books;
 }
 
-std::shared_ptr<BookShelfIterator> BookShelf::iterator()
+std::unique_ptr<BookShelfIterator> BookShelf::iterator()
 {
-    return std::make_shared<BookShelfIterator>(books);
+    return std::make_unique<BookShelfIterator>(books);
 }
