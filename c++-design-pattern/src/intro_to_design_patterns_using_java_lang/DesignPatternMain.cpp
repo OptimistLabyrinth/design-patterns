@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-// * public
 DesignPatternMain::DesignPatternMain()
 {
 }

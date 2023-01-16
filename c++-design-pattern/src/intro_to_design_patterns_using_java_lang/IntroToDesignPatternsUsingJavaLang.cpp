@@ -13,7 +13,6 @@
 #include "test/TestMain.h"
 #include "wrong/WrongMain.h"
 
-// * public
 IntroToDesignPatternsUsingJavaLang::IntroToDesignPatternsUsingJavaLang()
 {
 }
@@ -39,7 +38,6 @@ void IntroToDesignPatternsUsingJavaLang::run()
     designPatternMain->run();
 }
 
-// * private
 std::unique_ptr<DesignPatternMain> IntroToDesignPatternsUsingJavaLang::mainForSelectedOption(
     const String &input) const
 {
