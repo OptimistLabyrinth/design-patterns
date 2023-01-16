@@ -5,6 +5,7 @@
 
 #include <memory>
 #include <string>
+#include "../utils/String.h"
 #include "DesignPatternMain.h"
 
 class IntroToDesignPatternsUsingJavaLang
@@ -16,7 +17,7 @@ public:
     void run();
 
 private:
-    std::shared_ptr<DesignPatternMain> mainForSelectedOption(const std::string &);
+    std::unique_ptr<DesignPatternMain> mainForSelectedOption(const String &) const;
 };
 
 #endif

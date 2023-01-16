@@ -19,7 +19,7 @@ BookShelfIterator::~BookShelfIterator()
 {
 }
 
-bool BookShelfIterator::hasNext()
+bool BookShelfIterator::hasNext() const
 {
     return index < books->size();
 }

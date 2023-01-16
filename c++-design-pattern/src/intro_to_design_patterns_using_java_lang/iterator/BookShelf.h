@@ -15,10 +15,10 @@ public:
     explicit BookShelf(int);
     ~BookShelf();
 
-    Book getBookAt(int);
+    Book getBookAt(int) const;
     void appendBook(const Book &);
-    const int getLength();
-    const std::shared_ptr<std::vector<Book>> &getBooks();
+    int getLength() const;
+    const std::shared_ptr<std::vector<Book>> &getBooks() const;
 
     std::unique_ptr<BookShelfIterator> iterator();
 

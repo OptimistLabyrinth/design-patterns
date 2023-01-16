@@ -18,7 +18,7 @@ BookShelf::~BookShelf()
 {
 }
 
-Book BookShelf::getBookAt(int index)
+Book BookShelf::getBookAt(int index) const
 {
     return books->at(index);
 }
@@ -28,12 +28,12 @@ void BookShelf::appendBook(const Book &book)
     books->push_back(book);
 }
 
-const int BookShelf::getLength()
+int BookShelf::getLength() const
 {
     return books->size();
 }
 
-const std::shared_ptr<std::vector<Book>> &BookShelf::getBooks()
+const std::shared_ptr<std::vector<Book>> &BookShelf::getBooks() const
 {
     return books;
 }

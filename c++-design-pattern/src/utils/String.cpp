@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <cctype>
+#include <iostream>
 
 String::String()
 {
@@ -15,10 +16,10 @@ String::~String()
 {
 }
 
-std::string &String::trim(const char *trimTarget /* = " " */)
+std::string &String::trim(const char *trimTarget /* = " \t\n\r\f\v" */)
 {
     value.erase(0, value.find_first_not_of(trimTarget));
-    value.erase(value.find_first_not_of(trimTarget) + 1);
+    value.erase(value.find_last_not_of(trimTarget) + 1);
     return value;
 }
 
@@ -30,7 +31,12 @@ std::string &String::toLower()
     return value;
 }
 
-const std::string &String::getValue()
+const std::string &String::getValue() const
 {
     return value;
+}
+
+bool String::operator==(const char *str) const
+{
+    return value.compare(str) == 0;
 }

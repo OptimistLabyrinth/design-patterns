@@ -12,7 +12,7 @@ Book::~Book()
 {
 }
 
-const std::string &Book::getName()
+const std::string &Book::getName() const
 {
     return name;
 }

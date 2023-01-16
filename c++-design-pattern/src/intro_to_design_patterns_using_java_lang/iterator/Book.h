@@ -12,7 +12,7 @@ public:
     explicit Book(const char *);
     ~Book();
 
-    const std::string &getName();
+    const std::string &getName() const;
 
 private:
     const std::string name;

@@ -14,7 +14,7 @@ public:
     explicit BookShelfIterator(std::shared_ptr<std::vector<Book>>);
     ~BookShelfIterator();
 
-    bool hasNext();
+    bool hasNext() const;
     Book next();
 
 private:
