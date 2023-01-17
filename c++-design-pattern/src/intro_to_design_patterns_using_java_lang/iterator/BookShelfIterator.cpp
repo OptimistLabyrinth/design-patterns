@@ -1,10 +1,8 @@
 #include "BookShelfIterator.h"
 
 #include <iostream>
-#include <memory>
 #include <stdexcept>
 #include <utility>
-#include "Book.h"
 
 BookShelfIterator::BookShelfIterator() : books(std::make_shared<std::vector<Book>>()), index(0)
 {

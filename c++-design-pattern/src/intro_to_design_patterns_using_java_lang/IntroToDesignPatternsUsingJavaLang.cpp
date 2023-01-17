@@ -4,10 +4,6 @@
 #include <cctype>
 #include <iostream>
 #include <iterator>
-#include <memory>
-#include <string>
-#include "../utils/String.h"
-#include "DesignPatternMain.h"
 
 #include "iterator/IteratorMain.h"
 #include "test/TestMain.h"

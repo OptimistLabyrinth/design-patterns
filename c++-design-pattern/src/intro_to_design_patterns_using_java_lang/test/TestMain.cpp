@@ -1,9 +1,7 @@
 #include "TestMain.h"
 
 #include <iostream>
-#include <memory>
 #include <utility>
-#include "Base.h"
 #include "AAA.h"
 #include "BBB.h"
 

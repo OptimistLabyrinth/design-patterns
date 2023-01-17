@@ -1,10 +1,5 @@
 #include "BookShelf.h"
 
-#include <memory>
-#include <vector>
-#include "Book.h"
-#include "BookShelfIterator.h"
-
 BookShelf::BookShelf() : books(std::make_shared<std::vector<Book>>())
 {
 }
