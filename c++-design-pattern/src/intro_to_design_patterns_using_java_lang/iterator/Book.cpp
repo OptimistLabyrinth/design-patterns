@@ -4,7 +4,7 @@ Book::Book()
 {
 }
 
-Book::Book(const char *name) : name(name)
+Book::Book(const char *name) : name{name}
 {
 }
 

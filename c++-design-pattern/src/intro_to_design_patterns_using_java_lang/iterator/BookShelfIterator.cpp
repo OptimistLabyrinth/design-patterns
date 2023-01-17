@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <utility>
 
-BookShelfIterator::BookShelfIterator() : books(std::make_shared<std::vector<Book>>()), index(0)
+BookShelfIterator::BookShelfIterator() : books{std::make_shared<std::vector<Book>>()}, index{0}
 {
 }
 

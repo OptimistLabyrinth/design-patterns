@@ -8,7 +8,7 @@ String::String()
 {
 }
 
-String::String(const std::string &value) : value(value)
+String::String(const std::string &value) : value{value}
 {
 }
 

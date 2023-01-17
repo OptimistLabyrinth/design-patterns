@@ -19,14 +19,14 @@ IntroToDesignPatternsUsingJavaLang::~IntroToDesignPatternsUsingJavaLang()
 
 void IntroToDesignPatternsUsingJavaLang::run()
 {
-    std::string question = "Select design pattern\n"
-                           "  1. Iterator\n"
-                           " ....test\n"
-                           " => ";
+    std::string question = {"Select design pattern\n"
+                            "  1. Iterator\n"
+                            " ....test\n"
+                            " => "};
     std::cout << question;
     std::string input;
     std::getline(std::cin, input);
-    auto inputString = String(input);
+    auto inputString = String{input};
     inputString.trim();
     inputString.toLower();
 

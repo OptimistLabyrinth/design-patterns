@@ -1,6 +1,6 @@
 #include "BookShelf.h"
 
-BookShelf::BookShelf() : books(std::make_shared<std::vector<Book>>())
+BookShelf::BookShelf() : books{std::make_shared<std::vector<Book>>()}
 {
 }
 
