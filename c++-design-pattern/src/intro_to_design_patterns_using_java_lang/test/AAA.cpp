@@ -18,12 +18,12 @@ AAA &AAA::operator=(const AAA &other)
     return *this;
 }
 
-AAA::AAA(AAA &&ref)
+AAA::AAA(AAA &&ref) noexcept
 {
     std::cout << "AAA Move Constructor\n";
 }
 
-AAA &AAA::operator=(AAA &&ref)
+AAA &AAA::operator=(AAA &&ref) noexcept
 {
     std::cout << "AAA Move Assignment Operator\n";
     return *this;

@@ -11,12 +11,12 @@ class TestMain : public DesignPatternMain
 {
 public:
     TestMain();
-    ~TestMain();
+    ~TestMain() override;
 
-    void run();
+    void run() override;
 
 private:
-    const std::unique_ptr<Base> &doSomething(const std::unique_ptr<Base> &);
+    const std::unique_ptr<Base> &doSomething(const std::unique_ptr<Base> &) const;
 };
 
 #endif

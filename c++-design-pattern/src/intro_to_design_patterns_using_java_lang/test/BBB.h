@@ -11,13 +11,12 @@ public:
     BBB();
     BBB(const BBB &);
     BBB &operator=(const BBB &);
-    BBB(BBB &&);
-    BBB &operator=(BBB &&);
-    ~BBB();
+    BBB(BBB &&)
+    noexcept;
+    BBB &operator=(BBB &&) noexcept;
+    ~BBB() override;
 
-    void run();
-
-private:
+    void run() override;
 };
 
 #endif

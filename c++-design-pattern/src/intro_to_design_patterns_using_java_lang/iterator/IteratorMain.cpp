@@ -4,18 +4,14 @@
 #include "Book.h"
 #include "BookShelf.h"
 
-IteratorMain::IteratorMain()
-{
-}
+IteratorMain::IteratorMain() = default;
 
-IteratorMain::~IteratorMain()
-{
-}
+IteratorMain::~IteratorMain() = default;
 
 void IteratorMain::run()
 {
     int maxSize{4};
-    BookShelf bookShelf = BookShelf{maxSize};
+    auto bookShelf = BookShelf{maxSize};
     bookShelf.appendBook(Book{"Around the World in 80 days"});
     bookShelf.appendBook(Book{"Bible"});
     bookShelf.appendBook(Book{"Cinderella"});
@@ -29,8 +25,7 @@ void IteratorMain::run()
     }
     std::cout << "\n";
 
-    const auto &books = *(bookShelf.getBooks());
-    for (const auto &book : books)
+    for (const auto &books = *(bookShelf.getBooks()); const auto &book : books)
     {
         std::cout << book.getName() << "\n";
     }

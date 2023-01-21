@@ -14,7 +14,7 @@ public:
     IntroToDesignPatternsUsingJavaLang();
     ~IntroToDesignPatternsUsingJavaLang();
 
-    void run();
+    void run() const;
 
 private:
     std::unique_ptr<DesignPatternMain> mainForSelectedOption(const String &) const;

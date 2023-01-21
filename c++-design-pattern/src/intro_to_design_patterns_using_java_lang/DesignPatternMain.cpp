@@ -2,14 +2,11 @@
 
 #include <iostream>
 
-DesignPatternMain::DesignPatternMain()
-{
-}
+DesignPatternMain::DesignPatternMain() = default;
 
-DesignPatternMain::~DesignPatternMain()
-{
-}
+DesignPatternMain::~DesignPatternMain() = default;
 
 void DesignPatternMain::run()
 {
+    // * implement body in inheriting class
 }

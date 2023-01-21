@@ -19,7 +19,7 @@ public:
 
 private:
     std::shared_ptr<std::vector<Book>> books;
-    int index;
+    int index = 0;
 };
 
 #endif

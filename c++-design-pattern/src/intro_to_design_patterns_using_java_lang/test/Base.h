@@ -9,13 +9,11 @@ public:
     Base();
     Base(const Base &);
     Base &operator=(const Base &);
-    Base(Base &&);
-    Base &operator=(Base &&);
+    Base(Base &&) noexcept;
+    Base &operator=(Base &&) noexcept;
     virtual ~Base();
 
     virtual void run();
-
-private:
 };
 
 #endif

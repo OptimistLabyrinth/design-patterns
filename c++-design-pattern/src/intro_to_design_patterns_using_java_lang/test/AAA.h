@@ -11,13 +11,12 @@ public:
     AAA();
     AAA(const AAA &);
     AAA &operator=(const AAA &);
-    AAA(AAA &&);
-    AAA &operator=(AAA &&);
+    AAA(AAA &&)
+    noexcept;
+    AAA &operator=(AAA &&) noexcept;
     ~AAA();
 
     void run();
-
-private:
 };
 
 #endif

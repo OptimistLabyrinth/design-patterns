@@ -9,15 +9,11 @@
 #include "test/TestMain.h"
 #include "wrong/WrongMain.h"
 
-IntroToDesignPatternsUsingJavaLang::IntroToDesignPatternsUsingJavaLang()
-{
-}
+IntroToDesignPatternsUsingJavaLang::IntroToDesignPatternsUsingJavaLang() = default;
 
-IntroToDesignPatternsUsingJavaLang::~IntroToDesignPatternsUsingJavaLang()
-{
-}
+IntroToDesignPatternsUsingJavaLang::~IntroToDesignPatternsUsingJavaLang() = default;
 
-void IntroToDesignPatternsUsingJavaLang::run()
+void IntroToDesignPatternsUsingJavaLang::run() const
 {
     std::string question = {"Select design pattern\n"
                             "  1. Iterator\n"

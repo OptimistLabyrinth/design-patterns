@@ -17,13 +17,13 @@ public:
 
     Book getBookAt(int) const;
     void appendBook(const Book &);
-    int getLength() const;
+    size_t getLength() const;
     const std::shared_ptr<std::vector<Book>> &getBooks() const;
 
     std::unique_ptr<BookShelfIterator> iterator();
 
 private:
-    std::shared_ptr<std::vector<Book>> books;
+    std::shared_ptr<std::vector<Book>> books = std::make_shared<std::vector<Book>>();
 };
 
 #endif

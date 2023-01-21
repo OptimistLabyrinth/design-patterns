@@ -1,17 +1,13 @@
 #include "BookShelf.h"
 
-BookShelf::BookShelf() : books{std::make_shared<std::vector<Book>>()}
-{
-}
+BookShelf::BookShelf() = default;
 
 BookShelf::BookShelf(int maxSize) : BookShelf()
 {
     books->reserve(maxSize);
 }
 
-BookShelf::~BookShelf()
-{
-}
+BookShelf::~BookShelf() = default;
 
 Book BookShelf::getBookAt(int index) const
 {
@@ -23,7 +19,7 @@ void BookShelf::appendBook(const Book &book)
     books->push_back(book);
 }
 
-int BookShelf::getLength() const
+size_t BookShelf::getLength() const
 {
     return books->size();
 }

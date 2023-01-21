@@ -1,16 +1,12 @@
 #include "Book.h"
 
-Book::Book()
-{
-}
+Book::Book() = default;
 
 Book::Book(const char *name) : name{name}
 {
 }
 
-Book::~Book()
-{
-}
+Book::~Book() = default;
 
 const std::string &Book::getName() const
 {

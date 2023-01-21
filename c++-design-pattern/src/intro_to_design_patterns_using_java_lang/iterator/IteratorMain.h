@@ -9,11 +9,9 @@ class IteratorMain : public DesignPatternMain
 {
 public:
     IteratorMain();
-    ~IteratorMain();
+    ~IteratorMain() override;
 
     void run() override;
-
-private:
 };
 
 #endif

@@ -9,11 +9,9 @@ class WrongMain : public DesignPatternMain
 {
 public:
     WrongMain();
-    ~WrongMain();
+    ~WrongMain() override;
 
     void run() override;
-
-private:
 };
 
 #endif

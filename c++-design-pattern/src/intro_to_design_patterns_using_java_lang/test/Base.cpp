@@ -18,12 +18,12 @@ Base &Base::operator=(const Base &other)
     return *this;
 }
 
-Base::Base(Base &&ref)
+Base::Base(Base &&ref) noexcept
 {
     std::cout << "Base Move Constructor\n";
 }
 
-Base &Base::operator=(Base &&ref)
+Base &Base::operator=(Base &&ref) noexcept
 {
     std::cout << "Base Move Assignment Operator\n";
     return *this;

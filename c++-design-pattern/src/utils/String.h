@@ -9,7 +9,7 @@ class String
 {
 public:
     String();
-    String(const std::string &);
+    explicit String(const std::string &);
     ~String();
 
     std::string &trim(const char *trimTarget = " \t\n\r\f\v");

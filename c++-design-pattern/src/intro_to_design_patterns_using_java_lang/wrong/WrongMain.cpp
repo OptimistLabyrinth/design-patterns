@@ -2,13 +2,9 @@
 
 #include <iostream>
 
-WrongMain::WrongMain()
-{
-}
+WrongMain::WrongMain() = default;
 
-WrongMain::~WrongMain()
-{
-}
+WrongMain::~WrongMain() = default;
 
 void WrongMain::run()
 {

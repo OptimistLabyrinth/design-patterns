@@ -18,12 +18,12 @@ BBB &BBB::operator=(const BBB &other)
     return *this;
 }
 
-BBB::BBB(BBB &&other)
+BBB::BBB(BBB &&other) noexcept
 {
     std::cout << "BBB Move Constructor\n";
 }
 
-BBB &BBB::operator=(BBB &&other)
+BBB &BBB::operator=(BBB &&other) noexcept
 {
     std::cout << "BBB Move Constructor\n";
     return *this;

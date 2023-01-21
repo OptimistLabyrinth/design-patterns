@@ -10,8 +10,6 @@ public:
     virtual ~DesignPatternMain();
 
     virtual void run();
-
-private:
 };
 
 #endif

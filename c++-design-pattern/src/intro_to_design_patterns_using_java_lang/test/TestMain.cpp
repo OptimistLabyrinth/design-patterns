@@ -5,13 +5,9 @@
 #include "AAA.h"
 #include "BBB.h"
 
-TestMain::TestMain()
-{
-}
+TestMain::TestMain() = default;
 
-TestMain::~TestMain()
-{
-}
+TestMain::~TestMain() = default;
 
 void TestMain::run()
 {
@@ -28,7 +24,7 @@ void TestMain::run()
     std::cout << "\n";
 }
 
-const std::unique_ptr<Base> &TestMain::doSomething(const std::unique_ptr<Base> &instance)
+const std::unique_ptr<Base> &TestMain::doSomething(const std::unique_ptr<Base> &instance) const
 {
     std::cout << "inside TestMain doSomething, before instance->run()\n";
     instance->run();

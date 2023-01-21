@@ -4,17 +4,13 @@
 #include <cctype>
 #include <iostream>
 
-String::String()
-{
-}
+String::String() = default;
 
 String::String(const std::string &value) : value{value}
 {
 }
 
-String::~String()
-{
-}
+String::~String() = default;
 
 std::string &String::trim(const char *trimTarget /* = " \t\n\r\f\v" */)
 {

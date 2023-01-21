@@ -4,18 +4,16 @@
 #include <stdexcept>
 #include <utility>
 
-BookShelfIterator::BookShelfIterator() : books{std::make_shared<std::vector<Book>>()}, index{0}
+BookShelfIterator::BookShelfIterator() : books{std::make_shared<std::vector<Book>>()}
 {
 }
 
 BookShelfIterator::BookShelfIterator(std::shared_ptr<std::vector<Book>> books)
-    : books(books), index(0)
+    : books(books)
 {
 }
 
-BookShelfIterator::~BookShelfIterator()
-{
-}
+BookShelfIterator::~BookShelfIterator() = default;
 
 bool BookShelfIterator::hasNext() const
 {
