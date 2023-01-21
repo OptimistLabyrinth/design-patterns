@@ -25,4 +25,12 @@ make
 ./cppDesignPattern
 ```
 
+## Instead, you can use "CMake Tools" vscode extension
 
+it provides various options that helps developers minimize the headaches while development process in progress
+
+- CMake: Configure
+- CMake: Build
+- CMake: Clean
+- CMake: Run Without Debugging
+- CMake: Debug
