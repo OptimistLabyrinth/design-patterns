@@ -7,6 +7,10 @@ public class UnderlinePen extends Product {
         this.ulChar = ulChar;
     }
 
+    public UnderlinePen(UnderlinePen other) {
+        ulChar = other.ulChar;
+    }
+
     @Override
     public void use(String s) {
         int ulen = s.length();

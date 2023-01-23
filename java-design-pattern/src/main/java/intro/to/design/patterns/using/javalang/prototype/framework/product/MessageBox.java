@@ -7,6 +7,10 @@ public class MessageBox extends Product {
         this.decoChar = decoChar;
     }
 
+    public MessageBox(MessageBox other) {
+        decoChar = other.decoChar;
+    }
+
     @Override
     public void use(String s) {
         int decolen = 2 + s.length() + 2;
