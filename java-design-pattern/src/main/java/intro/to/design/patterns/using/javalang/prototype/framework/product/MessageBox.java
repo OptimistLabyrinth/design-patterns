@@ -1,6 +1,6 @@
 package intro.to.design.patterns.using.javalang.prototype.framework.product;
 
-public class MessageBox extends Product {
+public class MessageBox implements Product {
     private final char decoChar;
 
     public MessageBox(char decoChar) {
@@ -23,5 +23,10 @@ public class MessageBox extends Product {
             System.out.print(decoChar);
         }
         System.out.println();
+    }
+
+    @Override
+    public Product createCopy() {
+        return new MessageBox(this);
     }
 }

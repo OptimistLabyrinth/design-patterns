@@ -17,8 +17,4 @@ public class Manager {
         Product p = showCase.get(keyType);
         return p.createCopy();
     }
-
-    public Product prototypeOf(ProductKeyType keyType) {
-        return showCase.get(keyType);
-    }
 }
