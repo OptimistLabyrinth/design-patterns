@@ -1,6 +1,6 @@
 package intro.to.design.patterns.using.javalang.prototype.framework.product;
 
-public class UnderlinePen implements Product {
+public class UnderlinePen extends Product {
     private final char ulChar;
 
     public UnderlinePen(char ulChar) {
@@ -15,16 +15,5 @@ public class UnderlinePen implements Product {
             System.out.print(ulChar);
         }
         System.out.println();
-    }
-
-    @Override
-    public Product createCopy() {
-        Product p = null;
-        try {
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
-        }
-        return p;
     }
 }
