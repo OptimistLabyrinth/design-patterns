@@ -1,9 +1,6 @@
 package intro.to.design.patterns.using.javalang.adapter.fileproperties;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -17,17 +14,12 @@ public class FileProperties implements FileIO {
         this.properties = new HashMap<>();
     }
 
-    private String absoluteFilename(String filename) {
-        Path currentPath = Paths.get("");
-        return currentPath.toAbsolutePath().toString() + '/' + filename;
-    }
-
     @Override
     public void readFromFile(String filename) throws IOException {
         try (BufferedReader bufferedReader =
                      new BufferedReader(
                              new InputStreamReader(
-                                     new FileInputStream(new File(absoluteFilename(filename)).getCanonicalPath())))) {
+                                     new FileInputStream(new File(filename).getCanonicalPath())))) {
             properties.clear();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -44,15 +36,10 @@ public class FileProperties implements FileIO {
 
     @Override
     public void writeToFile(String filename) throws IOException {
-        String targetFilename = absoluteFilename(filename);
-        Path targetPath = Paths.get(targetFilename);
-        if (Files.notExists(targetPath)) {
-            Files.createFile(targetPath);
-        }
         try (BufferedWriter bufferedWriter
                      = new BufferedWriter(
                              new OutputStreamWriter(
-                                     new FileOutputStream(new File(targetFilename).getCanonicalPath())))) {
+                                     new FileOutputStream(new File(filename).getCanonicalPath())))) {
             bufferedWriter.write("# written by FileProperties\n");
             LocalDateTime localDateTime = LocalDateTime.now();
             bufferedWriter.write(
